@@ -41,6 +41,9 @@
             this.canv.Size = new System.Drawing.Size(1233, 343);
             this.canv.TabIndex = 0;
             this.canv.TabStop = false;
+            this.canv.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canv_MouseDown);
+            this.canv.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canv_MouseMove);
+            this.canv.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canv_MouseUp);
             // 
             // button1
             // 
