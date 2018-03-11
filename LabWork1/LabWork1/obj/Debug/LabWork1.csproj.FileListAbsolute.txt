@@ -1,0 +1,10 @@
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\bin\Debug\LabWork1.exe.config
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\bin\Debug\LabWork1.exe
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\bin\Debug\LabWork1.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.csprojResolveAssemblyReference.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.Form1.resources
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.Properties.Resources.resources
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.csproj.GenerateResource.Cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.exe
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\LabWork1\LabWork1\obj\Debug\LabWork1.pdb
