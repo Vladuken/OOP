@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LabWork1.Figures
 {
-    class Rhombus: Figure
+    class Rhombus: Rectangle
     {
         Point[] points = new Point[4];
         
