@@ -27,6 +27,8 @@ namespace LabWork1
         Color color = Color.Black;
         int figureTag = 1;
 
+        private bool isDrawn = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -51,7 +53,7 @@ namespace LabWork1
             line.Draw(canvas);
             figureList.Add(line);
 
-            Figures.Rectangle rect = new Figures.Rectangle(new Pen(Color.Black, 3),new Point(10,20), new Point(300, 300));
+            Figures.Rectangle rect = new Figures.Rectangle(new Pen(color, 3),new Point(10,20), new Point(300, 300));
             rect.Draw(canvas);
             figureList.Add(rect);
 
@@ -69,8 +71,6 @@ namespace LabWork1
 
         }
 
-        
-
         private void Back_Click(object sender, EventArgs e)
         {
             if (figureList.Count() > 0)
@@ -85,24 +85,18 @@ namespace LabWork1
         {
             figureTag = 1;
         }
-
-        
-
         private void Square_Click(object sender, EventArgs e)
         {
             figureTag = 2;
         }
-
         private void Ellipse_Click(object sender, EventArgs e)
         {
             figureTag = 3;
         }
-
         private void Circle_Click(object sender, EventArgs e)
         {
             figureTag = 4;
         }
-
         private void Line_Click(object sender, EventArgs e)
         {
             figureTag = 5;
@@ -115,19 +109,27 @@ namespace LabWork1
 
         private void canv_MouseDown(object sender, MouseEventArgs e)
         {
+            isDrawn = true;
+
             startpoint.X = e.X;
             startpoint.Y = e.Y;
+
         }
 
         private void canv_MouseMove(object sender, MouseEventArgs e)
         {
-            //Point buff = new Point(e.X, e.Y);
-            //Figures.Rectangle rect = new Figures.Rectangle(pen, startpoint, buff);
-            //rect.Draw(canvas);
-            //pen.Color = Color.White;
-            //rect.Draw(canvas);
-            //pen.Color = Color.Black;
+            if (isDrawn)
+            {
+                endpoint.X = e.X;
+                endpoint.Y = e.Y;
 
+                figureDict.Clear();
+                InitialiseDict();
+
+                figBuff = figureDict[figureTag];
+
+                canv.Refresh();
+            }
             XLable.Text = "X = " + e.X.ToString();
             YLable.Text = "Y = " + e.Y.ToString();
         }
@@ -142,8 +144,19 @@ namespace LabWork1
             }
         }
 
+        private void canv_Paint(object sender, PaintEventArgs e)
+        {
+            figureList.Draw(e.Graphics);
+            if (isDrawn)
+            {
+                figBuff.Draw(e.Graphics);
+            }
+
+        }
+
         private void canv_MouseUp(object sender, MouseEventArgs e)
         {
+            isDrawn = false;
             endpoint.X = e.X;
             endpoint.Y = e.Y;
 

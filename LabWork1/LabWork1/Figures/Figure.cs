@@ -22,33 +22,15 @@ namespace LabWork1.Figures
             this.begin = begin;
             this.end = end;
 
-            
             this.width = Math.Abs(begin.X - end.X);
             this.height = Math.Abs(begin.Y - end.Y);
 
             //get topleft point to draw figures using graphics
+            topLeftPoint.X = Math.Min(begin.X, end.X);
+            downRightPoint.X = Math.Max(begin.X, end.X);
 
-            if (begin.X <= end.X)
-            {
-                this.topLeftPoint.X = begin.X;
-                this.downRightPoint.X = end.X;
-            }
-            else
-            {
-                this.topLeftPoint.X = end.X;
-                this.downRightPoint.X = begin.X;
-            }
-
-            if (begin.Y <= end.Y)
-            {
-                this.topLeftPoint.Y = begin.Y;
-                this.downRightPoint.Y = end.Y;
-            }
-            else
-            {
-                this.topLeftPoint.Y = end.Y;
-                this.downRightPoint.Y = begin.Y;
-            }
+            topLeftPoint.Y = Math.Min(begin.Y, end.Y);
+            downRightPoint.Y = Math.Max(begin.Y, end.Y);
 
         }
         public virtual void Draw(Graphics graphics)

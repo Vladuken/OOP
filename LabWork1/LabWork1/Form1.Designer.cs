@@ -31,17 +31,17 @@
             this.canv = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Tools = new System.Windows.Forms.GroupBox();
-            this.Rectangle = new System.Windows.Forms.Button();
-            this.Square = new System.Windows.Forms.Button();
-            this.Ellipse = new System.Windows.Forms.Button();
-            this.Circle = new System.Windows.Forms.Button();
-            this.Rhombus = new System.Windows.Forms.Button();
-            this.Line = new System.Windows.Forms.Button();
-            this.Back = new System.Windows.Forms.Button();
-            this.ChooseColor = new System.Windows.Forms.ColorDialog();
-            this.choseColor = new System.Windows.Forms.PictureBox();
-            this.XLable = new System.Windows.Forms.Label();
             this.YLable = new System.Windows.Forms.Label();
+            this.XLable = new System.Windows.Forms.Label();
+            this.choseColor = new System.Windows.Forms.PictureBox();
+            this.Back = new System.Windows.Forms.Button();
+            this.Line = new System.Windows.Forms.Button();
+            this.Rhombus = new System.Windows.Forms.Button();
+            this.Circle = new System.Windows.Forms.Button();
+            this.Ellipse = new System.Windows.Forms.Button();
+            this.Square = new System.Windows.Forms.Button();
+            this.Rectangle = new System.Windows.Forms.Button();
+            this.ChooseColor = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.canv)).BeginInit();
             this.Tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseColor)).BeginInit();
@@ -55,6 +55,7 @@
             this.canv.Size = new System.Drawing.Size(1233, 572);
             this.canv.TabIndex = 0;
             this.canv.TabStop = false;
+            this.canv.Paint += new System.Windows.Forms.PaintEventHandler(this.canv_Paint);
             this.canv.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canv_MouseDown);
             this.canv.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canv_MouseMove);
             this.canv.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canv_MouseUp);
@@ -89,85 +90,15 @@
             this.Tools.TabStop = false;
             this.Tools.Text = "Tools";
             // 
-            // Rectangle
+            // YLable
             // 
-            this.Rectangle.Location = new System.Drawing.Point(13, 29);
-            this.Rectangle.Name = "Rectangle";
-            this.Rectangle.Size = new System.Drawing.Size(118, 53);
-            this.Rectangle.TabIndex = 0;
-            this.Rectangle.Text = "Rectangle";
-            this.Rectangle.UseVisualStyleBackColor = true;
-            this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
-            // 
-            // Square
-            // 
-            this.Square.Location = new System.Drawing.Point(13, 88);
-            this.Square.Name = "Square";
-            this.Square.Size = new System.Drawing.Size(118, 53);
-            this.Square.TabIndex = 1;
-            this.Square.Text = "Square";
-            this.Square.UseVisualStyleBackColor = true;
-            this.Square.Click += new System.EventHandler(this.Square_Click);
-            // 
-            // Ellipse
-            // 
-            this.Ellipse.Location = new System.Drawing.Point(137, 29);
-            this.Ellipse.Name = "Ellipse";
-            this.Ellipse.Size = new System.Drawing.Size(118, 53);
-            this.Ellipse.TabIndex = 2;
-            this.Ellipse.Text = "Ellipse";
-            this.Ellipse.UseVisualStyleBackColor = true;
-            this.Ellipse.Click += new System.EventHandler(this.Ellipse_Click);
-            // 
-            // Circle
-            // 
-            this.Circle.Location = new System.Drawing.Point(137, 88);
-            this.Circle.Name = "Circle";
-            this.Circle.Size = new System.Drawing.Size(118, 53);
-            this.Circle.TabIndex = 3;
-            this.Circle.Text = "Circle";
-            this.Circle.UseVisualStyleBackColor = true;
-            this.Circle.Click += new System.EventHandler(this.Circle_Click);
-            // 
-            // Rhombus
-            // 
-            this.Rhombus.Location = new System.Drawing.Point(261, 88);
-            this.Rhombus.Name = "Rhombus";
-            this.Rhombus.Size = new System.Drawing.Size(118, 53);
-            this.Rhombus.TabIndex = 4;
-            this.Rhombus.Text = "Rhombus";
-            this.Rhombus.UseVisualStyleBackColor = true;
-            this.Rhombus.Click += new System.EventHandler(this.Rhombus_Click);
-            // 
-            // Line
-            // 
-            this.Line.Location = new System.Drawing.Point(261, 29);
-            this.Line.Name = "Line";
-            this.Line.Size = new System.Drawing.Size(118, 53);
-            this.Line.TabIndex = 5;
-            this.Line.Text = "Line";
-            this.Line.UseVisualStyleBackColor = true;
-            this.Line.Click += new System.EventHandler(this.Line_Click);
-            // 
-            // Back
-            // 
-            this.Back.Location = new System.Drawing.Point(878, 31);
-            this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(75, 112);
-            this.Back.TabIndex = 6;
-            this.Back.Text = "Back";
-            this.Back.UseVisualStyleBackColor = true;
-            this.Back.Click += new System.EventHandler(this.Back_Click);
-            // 
-            // choseColor
-            // 
-            this.choseColor.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.choseColor.Location = new System.Drawing.Point(385, 31);
-            this.choseColor.Name = "choseColor";
-            this.choseColor.Size = new System.Drawing.Size(56, 110);
-            this.choseColor.TabIndex = 4;
-            this.choseColor.TabStop = false;
-            this.choseColor.Click += new System.EventHandler(this.choseColor_Click);
+            this.YLable.AutoSize = true;
+            this.YLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.YLable.Location = new System.Drawing.Point(548, 112);
+            this.YLable.Name = "YLable";
+            this.YLable.Size = new System.Drawing.Size(55, 29);
+            this.YLable.TabIndex = 8;
+            this.YLable.Text = "Y = ";
             // 
             // XLable
             // 
@@ -179,15 +110,85 @@
             this.XLable.TabIndex = 7;
             this.XLable.Text = "X =  \r";
             // 
-            // YLable
+            // choseColor
             // 
-            this.YLable.AutoSize = true;
-            this.YLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.YLable.Location = new System.Drawing.Point(548, 112);
-            this.YLable.Name = "YLable";
-            this.YLable.Size = new System.Drawing.Size(55, 29);
-            this.YLable.TabIndex = 8;
-            this.YLable.Text = "Y = ";
+            this.choseColor.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.choseColor.Location = new System.Drawing.Point(385, 31);
+            this.choseColor.Name = "choseColor";
+            this.choseColor.Size = new System.Drawing.Size(56, 110);
+            this.choseColor.TabIndex = 4;
+            this.choseColor.TabStop = false;
+            this.choseColor.Click += new System.EventHandler(this.choseColor_Click);
+            // 
+            // Back
+            // 
+            this.Back.Location = new System.Drawing.Point(878, 31);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(75, 112);
+            this.Back.TabIndex = 6;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
+            // Line
+            // 
+            this.Line.Location = new System.Drawing.Point(261, 29);
+            this.Line.Name = "Line";
+            this.Line.Size = new System.Drawing.Size(118, 53);
+            this.Line.TabIndex = 5;
+            this.Line.Text = "Line";
+            this.Line.UseVisualStyleBackColor = true;
+            this.Line.Click += new System.EventHandler(this.Line_Click);
+            // 
+            // Rhombus
+            // 
+            this.Rhombus.Location = new System.Drawing.Point(261, 88);
+            this.Rhombus.Name = "Rhombus";
+            this.Rhombus.Size = new System.Drawing.Size(118, 53);
+            this.Rhombus.TabIndex = 4;
+            this.Rhombus.Text = "Rhombus";
+            this.Rhombus.UseVisualStyleBackColor = true;
+            this.Rhombus.Click += new System.EventHandler(this.Rhombus_Click);
+            // 
+            // Circle
+            // 
+            this.Circle.Location = new System.Drawing.Point(137, 88);
+            this.Circle.Name = "Circle";
+            this.Circle.Size = new System.Drawing.Size(118, 53);
+            this.Circle.TabIndex = 3;
+            this.Circle.Text = "Circle";
+            this.Circle.UseVisualStyleBackColor = true;
+            this.Circle.Click += new System.EventHandler(this.Circle_Click);
+            // 
+            // Ellipse
+            // 
+            this.Ellipse.Location = new System.Drawing.Point(137, 29);
+            this.Ellipse.Name = "Ellipse";
+            this.Ellipse.Size = new System.Drawing.Size(118, 53);
+            this.Ellipse.TabIndex = 2;
+            this.Ellipse.Text = "Ellipse";
+            this.Ellipse.UseVisualStyleBackColor = true;
+            this.Ellipse.Click += new System.EventHandler(this.Ellipse_Click);
+            // 
+            // Square
+            // 
+            this.Square.Location = new System.Drawing.Point(13, 88);
+            this.Square.Name = "Square";
+            this.Square.Size = new System.Drawing.Size(118, 53);
+            this.Square.TabIndex = 1;
+            this.Square.Text = "Square";
+            this.Square.UseVisualStyleBackColor = true;
+            this.Square.Click += new System.EventHandler(this.Square_Click);
+            // 
+            // Rectangle
+            // 
+            this.Rectangle.Location = new System.Drawing.Point(13, 29);
+            this.Rectangle.Name = "Rectangle";
+            this.Rectangle.Size = new System.Drawing.Size(118, 53);
+            this.Rectangle.TabIndex = 0;
+            this.Rectangle.Text = "Rectangle";
+            this.Rectangle.UseVisualStyleBackColor = true;
+            this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
             // 
             // Form1
             // 
