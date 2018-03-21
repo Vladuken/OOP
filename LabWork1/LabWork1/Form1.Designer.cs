@@ -42,6 +42,9 @@
             this.Square = new System.Windows.Forms.Button();
             this.Rectangle = new System.Windows.Forms.Button();
             this.ChooseColor = new System.Windows.Forms.ColorDialog();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Triangle = new System.Windows.Forms.Button();
+            this.RightTriangle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.canv)).BeginInit();
             this.Tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseColor)).BeginInit();
@@ -73,6 +76,8 @@
             // 
             // Tools
             // 
+            this.Tools.Controls.Add(this.RightTriangle);
+            this.Tools.Controls.Add(this.Triangle);
             this.Tools.Controls.Add(this.YLable);
             this.Tools.Controls.Add(this.XLable);
             this.Tools.Controls.Add(this.choseColor);
@@ -190,12 +195,42 @@
             this.Rectangle.UseVisualStyleBackColor = true;
             this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(20, 607);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Triangle
+            // 
+            this.Triangle.Location = new System.Drawing.Point(448, 31);
+            this.Triangle.Name = "Triangle";
+            this.Triangle.Size = new System.Drawing.Size(89, 51);
+            this.Triangle.TabIndex = 9;
+            this.Triangle.Text = "Triangle";
+            this.Triangle.UseVisualStyleBackColor = true;
+            this.Triangle.Click += new System.EventHandler(this.Triangle_Click);
+            // 
+            // RightTriangle
+            // 
+            this.RightTriangle.Location = new System.Drawing.Point(543, 31);
+            this.RightTriangle.Name = "RightTriangle";
+            this.RightTriangle.Size = new System.Drawing.Size(85, 51);
+            this.RightTriangle.TabIndex = 10;
+            this.RightTriangle.Text = "RightTriangle";
+            this.RightTriangle.UseVisualStyleBackColor = true;
+            this.RightTriangle.Click += new System.EventHandler(this.RightTriangle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1257, 772);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Tools);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.canv);
@@ -225,6 +260,9 @@
         private System.Windows.Forms.PictureBox choseColor;
         private System.Windows.Forms.Label YLable;
         private System.Windows.Forms.Label XLable;
+        private System.Windows.Forms.Button Triangle;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button RightTriangle;
     }
 }
 

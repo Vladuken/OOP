@@ -44,6 +44,8 @@ namespace LabWork1
             figureDict.Add(4, new Circle(new Pen(color, 3), startpoint, endpoint));
             figureDict.Add(5, new Line(new Pen(color, 3), startpoint, endpoint));
             figureDict.Add(6, new Rhombus(new Pen(color, 3),startpoint, endpoint));
+            figureDict.Add(7, new Triangle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(8, new RightTriangle(new Pen(color, 3), startpoint, endpoint));
         }
 
 
@@ -106,6 +108,15 @@ namespace LabWork1
         {
             figureTag = 6;
         }
+        private void Triangle_Click(object sender, EventArgs e)
+        {
+            figureTag = 7;
+        }
+
+        private void RightTriangle_Click(object sender, EventArgs e)
+        {
+            figureTag = 8;
+        }
 
         private void canv_MouseDown(object sender, MouseEventArgs e)
         {
@@ -153,6 +164,8 @@ namespace LabWork1
             }
 
         }
+
+      
 
         private void canv_MouseUp(object sender, MouseEventArgs e)
         {
