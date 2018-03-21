@@ -46,39 +46,32 @@ namespace LabWork1
             figureDict.Add(6, new Rhombus(new Pen(color, 3),startpoint, endpoint));
             figureDict.Add(7, new Triangle(new Pen(color, 3), startpoint, endpoint));
             figureDict.Add(8, new RightTriangle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(9, new RegularTriangle(new Pen(color, 3), startpoint, endpoint));
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Line line = new Line(new Pen(Color.Black, 3), startpoint, endpoint);
-            line.Draw(canvas);
-            figureList.Add(line);
-
-            Figures.Rectangle rect = new Figures.Rectangle(new Pen(color, 3),new Point(10,20), new Point(300, 300));
-            rect.Draw(canvas);
-            figureList.Add(rect);
-
-            Figures.Ellipse cirk = new Figures.Ellipse(new Pen(Color.Black, 3), new Point(100, 100), new Point(200, 400));
-            cirk.Draw(canvas);
-            figureList.Add(cirk);
-
-            Figures.Square square = new Figures.Square(new Pen(Color.Black, 3), new Point(0, 50), new Point(100, 600));
-            square.Draw(canvas);
-            figureList.Add(square);
-
-            Figures.Circle circle = new Figures.Circle(new Pen(Color.Black, 3), new Point(600, 100), new Point(250, 300));
-            circle.Draw(canvas);
-            figureList.Add(circle);
-
+            FigureList lablist = new FigureList();
+            lablist.Add(new Line(new Pen(Color.Black, 3), new Point(50,50),new Point(50,200)));
+            lablist.Add(new Figures.Rectangle(new Pen(color, 3), new Point(60, 50), new Point(150, 200)));
+            lablist.Add(new Figures.Ellipse(new Pen(Color.Black, 3), new Point(170, 50), new Point(300, 200)));
+            lablist.Add(new Figures.Square(new Pen(Color.Black, 3), new Point(310, 50), new Point(400, 200)));
+            lablist.Add(new Figures.Circle(new Pen(Color.Black, 3), new Point(500, 50), new Point(600, 200)));
+            lablist.Add(new Figures.Rhombus(new Pen(color, 3), new Point(60, 300), new Point(150, 450)));
+            lablist.Add(new Figures.Triangle(new Pen(Color.Black, 3), new Point(170, 300), new Point(280, 450)));
+            lablist.Add(new Figures.RightTriangle(new Pen(Color.Black, 3), new Point(320, 300), new Point(400, 450)));
+            lablist.Add(new Figures.RegularTriangle(new Pen(Color.Black, 3), new Point(450, 300), new Point(600, 450)));
+            lablist.Draw(canvas);
         }
 
         private void Back_Click(object sender, EventArgs e)
         {
+            canvas.Clear(Color.White);
+
             if (figureList.Count() > 0)
             {
                 figureList.RemoveLast();
-                canvas.Clear(Color.White);
                 figureList.Draw(canvas);
             }
         }
@@ -103,7 +96,6 @@ namespace LabWork1
         {
             figureTag = 5;
         }
-
         private void Rhombus_Click(object sender, EventArgs e)
         {
             figureTag = 6;
@@ -112,10 +104,13 @@ namespace LabWork1
         {
             figureTag = 7;
         }
-
         private void RightTriangle_Click(object sender, EventArgs e)
         {
             figureTag = 8;
+        }
+        private void RegularTriangle_Click(object sender, EventArgs e)
+        {
+            figureTag = 9;
         }
 
         private void canv_MouseDown(object sender, MouseEventArgs e)
@@ -124,7 +119,6 @@ namespace LabWork1
 
             startpoint.X = e.X;
             startpoint.Y = e.Y;
-
         }
 
         private void canv_MouseMove(object sender, MouseEventArgs e)
@@ -141,6 +135,7 @@ namespace LabWork1
 
                 canv.Refresh();
             }
+
             XLable.Text = "X = " + e.X.ToString();
             YLable.Text = "Y = " + e.Y.ToString();
         }
@@ -164,8 +159,6 @@ namespace LabWork1
             }
 
         }
-
-      
 
         private void canv_MouseUp(object sender, MouseEventArgs e)
         {

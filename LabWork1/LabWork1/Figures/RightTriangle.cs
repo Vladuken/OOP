@@ -13,6 +13,7 @@ namespace LabWork1.Figures
    
         public RightTriangle(Pen pen, Point begin, Point end) : base(pen, begin, end)
         {
+
             //up middle point
             this.points[1].X = topLeftPoint.X;
             this.points[1].Y = topLeftPoint.Y;
