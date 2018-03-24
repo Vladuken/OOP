@@ -18,7 +18,7 @@ namespace LabWork1
         Graphics canvas;
 
         Pen pen = new Pen(Color.Black, 3);
-        Figure figBuff = new Figure(new Pen(Color.White),new Point(), new Point());
+        Figure figBuff;
         
         FigureList figureList = new FigureList();
 

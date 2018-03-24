@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace LabWork1.Figures
 {
-    class Figure
+    abstract class Figure
     {
         public Point begin, end;
         
@@ -19,6 +19,6 @@ namespace LabWork1.Figures
             this.begin = begin;
             this.end = end;
         }
-        public virtual void Draw(Graphics graphics){}
+        public abstract void Draw(Graphics graphics);
     }
 }

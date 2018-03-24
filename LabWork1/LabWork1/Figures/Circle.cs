@@ -13,16 +13,10 @@ namespace LabWork1.Figures
         {
 
         }
+
         public override void Draw(Graphics graphics)
         {
-            if (width >= height)
-            {
-                graphics.DrawEllipse(pen, topLeftPoint.X, topLeftPoint.Y, width, width);
-            }
-            else
-            {
-                graphics.DrawEllipse(pen, topLeftPoint.X, topLeftPoint.Y, height, height);
-            }
+            graphics.DrawEllipse(pen, topLeftPoint.X, topLeftPoint.Y,Math.Max(width,height), Math.Max(width, height));
         }
     }
 }

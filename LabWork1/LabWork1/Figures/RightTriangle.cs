@@ -17,7 +17,6 @@ namespace LabWork1.Figures
             //up middle point
             this.points[1].X = topLeftPoint.X;
             this.points[1].Y = topLeftPoint.Y;
-
         }
 
         public override void Draw(Graphics graphics)
