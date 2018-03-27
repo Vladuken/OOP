@@ -45,6 +45,7 @@
             this.Square = new System.Windows.Forms.Button();
             this.Rectangle = new System.Windows.Forms.Button();
             this.ChooseColor = new System.Windows.Forms.ColorDialog();
+            this.Clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.canv)).BeginInit();
             this.Tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseColor)).BeginInit();
@@ -76,6 +77,7 @@
             // 
             // Tools
             // 
+            this.Tools.Controls.Add(this.Clear);
             this.Tools.Controls.Add(this.RegularTriangle);
             this.Tools.Controls.Add(this.RightTriangle);
             this.Tools.Controls.Add(this.Triangle);
@@ -130,7 +132,7 @@
             // 
             this.YLable.AutoSize = true;
             this.YLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.YLable.Location = new System.Drawing.Point(646, 110);
+            this.YLable.Location = new System.Drawing.Point(614, 110);
             this.YLable.Name = "YLable";
             this.YLable.Size = new System.Drawing.Size(55, 29);
             this.YLable.TabIndex = 8;
@@ -226,6 +228,16 @@
             this.Rectangle.UseVisualStyleBackColor = true;
             this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
             // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(725, 29);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 112);
+            this.Clear.TabIndex = 12;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,6 +276,7 @@
         private System.Windows.Forms.Button Triangle;
         private System.Windows.Forms.Button RightTriangle;
         private System.Windows.Forms.Button RegularTriangle;
+        private System.Windows.Forms.Button Clear;
     }
 }
 

@@ -9,6 +9,8 @@ namespace LabWork1.Figures
 {
     class Circle:Ellipse
     {
+ 
+
         public Circle(Pen pen,Point begin, Point end):base(pen,begin,end)
         {
 

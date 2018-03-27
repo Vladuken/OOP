@@ -35,6 +35,10 @@ namespace LabWork1.Figures
         {
             return figureList.Count();
         }
+        public void Clear()
+        {
+            this.figureList.Clear();
+        }
 
         
 

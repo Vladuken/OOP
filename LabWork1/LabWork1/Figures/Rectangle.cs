@@ -27,7 +27,7 @@ namespace LabWork1.Figures
             }
         }
 
-        public Point topLeftPoint
+        public virtual Point topLeftPoint
         {
             get
             {
@@ -35,7 +35,7 @@ namespace LabWork1.Figures
             }
         }
 
-        public Point downRightPoint
+        public virtual Point downRightPoint
         {
             get
             {

@@ -10,7 +10,8 @@ namespace LabWork1.Figures
 {
     abstract class Figure
     {
-        public Point begin, end;
+        public virtual Point begin { get; set; }
+        public virtual Point end { get; set; }
         
         public Pen pen = new Pen(Color.Black, 1);
         public Figure(Pen pen, Point begin, Point end)

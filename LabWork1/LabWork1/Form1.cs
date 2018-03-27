@@ -16,16 +16,14 @@ namespace LabWork1
     {
         Point startpoint, endpoint;
         Graphics canvas;
-
+        Color color = Color.Black;
         Pen pen = new Pen(Color.Black, 3);
         Figure figBuff;
-        
         FigureList figureList = new FigureList();
 
-        Dictionary<int, Figure> figureDict = new Dictionary<int, Figure>();
+        //Dictionary<int, Figure> figureDict = new Dictionary<int, Figure>();
 
-        Color color = Color.Black;
-        int figureTag = 1;
+        //int figureTag = 1;
 
         private bool isDrawn = false;
 
@@ -33,35 +31,25 @@ namespace LabWork1
         {
             InitializeComponent();
             canvas = canv.CreateGraphics();
-            InitialiseDict();
+            figBuff = new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint);
+            //InitialiseDict();
         }
 
-        private void InitialiseDict()
-        {
-            figureDict.Add(1, new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(2, new Square(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(3, new Ellipse(new Pen(color, 3),startpoint, endpoint));
-            figureDict.Add(4, new Circle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(5, new Line(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(6, new Rhombus(new Pen(color, 3),startpoint, endpoint));
-            figureDict.Add(7, new Triangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(8, new RightTriangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(9, new RegularTriangle(new Pen(color, 3), startpoint, endpoint));
-        }
+       
 
 
         private void button1_Click(object sender, EventArgs e)
         {
             FigureList lablist = new FigureList();
-            lablist.Add(new Line(new Pen(Color.Black, 3), new Point(50,50),new Point(50,200)));
+            lablist.Add(new Line(new Pen(color, 3), new Point(50,50),new Point(50,200)));
             lablist.Add(new Figures.Rectangle(new Pen(color, 3), new Point(60, 50), new Point(150, 200)));
-            lablist.Add(new Figures.Ellipse(new Pen(Color.Black, 3), new Point(170, 50), new Point(300, 200)));
-            lablist.Add(new Figures.Square(new Pen(Color.Black, 3), new Point(310, 50), new Point(400, 200)));
-            lablist.Add(new Figures.Circle(new Pen(Color.Black, 3), new Point(500, 50), new Point(600, 200)));
+            lablist.Add(new Figures.Ellipse(new Pen(color, 3), new Point(170, 50), new Point(300, 200)));
+            lablist.Add(new Figures.Square(new Pen(color, 3), new Point(310, 50), new Point(400, 200)));
+            lablist.Add(new Figures.Circle(new Pen(color, 3), new Point(500, 50), new Point(600, 200)));
             lablist.Add(new Figures.Rhombus(new Pen(color, 3), new Point(60, 300), new Point(150, 450)));
-            lablist.Add(new Figures.Triangle(new Pen(Color.Black, 3), new Point(170, 300), new Point(280, 450)));
-            lablist.Add(new Figures.RightTriangle(new Pen(Color.Black, 3), new Point(320, 300), new Point(400, 450)));
-            lablist.Add(new Figures.RegularTriangle(new Pen(Color.Black, 3), new Point(450, 300), new Point(600, 450)));
+            lablist.Add(new Figures.Triangle(new Pen(color, 3), new Point(170, 300), new Point(280, 450)));
+            lablist.Add(new Figures.RightTriangle(new Pen(color, 3), new Point(320, 300), new Point(400, 450)));
+            lablist.Add(new Figures.RegularTriangle(new Pen(color, 3), new Point(450, 300), new Point(600, 450)));
             lablist.Draw(canvas);
         }
 
@@ -76,41 +64,56 @@ namespace LabWork1
             }
         }
 
+
+        /*private void InitialiseDict()
+        {
+            figureDict.Add(1, new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(2, new Square(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(3, new Ellipse(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(4, new Circle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(5, new Line(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(6, new Rhombus(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(7, new Triangle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(8, new RightTriangle(new Pen(color, 3), startpoint, endpoint));
+            figureDict.Add(9, new RegularTriangle(new Pen(color, 3), startpoint, endpoint));
+        }*/
+
+
         private void Rectangle_Click(object sender, EventArgs e)
         {
-            figureTag = 1;
+            figBuff = new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint);
         }
         private void Square_Click(object sender, EventArgs e)
         {
-            figureTag = 2;
+            figBuff = new Square(new Pen(color, 3), startpoint, endpoint);
         }
         private void Ellipse_Click(object sender, EventArgs e)
         {
-            figureTag = 3;
+            figBuff = new Ellipse(new Pen(color, 3), startpoint, endpoint);
         }
         private void Circle_Click(object sender, EventArgs e)
         {
-            figureTag = 4;
+            figBuff = new Circle(new Pen(color, 3), startpoint, endpoint);
         }
         private void Line_Click(object sender, EventArgs e)
         {
-            figureTag = 5;
+            figBuff = new Line(new Pen(color, 3), startpoint, endpoint);
         }
         private void Rhombus_Click(object sender, EventArgs e)
         {
-            figureTag = 6;
+            figBuff = new Rhombus(new Pen(color, 3), startpoint, endpoint);
         }
         private void Triangle_Click(object sender, EventArgs e)
         {
-            figureTag = 7;
+            figBuff = new Triangle(new Pen(color, 3), startpoint, endpoint);
         }
         private void RightTriangle_Click(object sender, EventArgs e)
         {
-            figureTag = 8;
+            figBuff = new RightTriangle(new Pen(color, 3), startpoint, endpoint);
         }
         private void RegularTriangle_Click(object sender, EventArgs e)
         {
-            figureTag = 9;
+            figBuff = new RegularTriangle(new Pen(color, 3), startpoint, endpoint);
         }
 
         private void canv_MouseDown(object sender, MouseEventArgs e)
@@ -119,6 +122,8 @@ namespace LabWork1
 
             startpoint.X = e.X;
             startpoint.Y = e.Y;
+            figBuff.begin = startpoint;
+            figBuff.end = startpoint;
         }
 
         private void canv_MouseMove(object sender, MouseEventArgs e)
@@ -127,12 +132,10 @@ namespace LabWork1
             {
                 endpoint.X = e.X;
                 endpoint.Y = e.Y;
-
-                figureDict.Clear();
-                InitialiseDict();
-
-                figBuff = figureDict[figureTag];
-
+                //figureDict.Clear();
+                //InitialiseDict();
+                //figBuff = figureDict[figureTag];
+                figBuff.end = endpoint;
                 canv.Refresh();
             }
 
@@ -160,17 +163,26 @@ namespace LabWork1
 
         }
 
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            figureList.Clear();
+            canvas.Clear(Color.White);
+        }
+
         private void canv_MouseUp(object sender, MouseEventArgs e)
         {
             isDrawn = false;
             endpoint.X = e.X;
             endpoint.Y = e.Y;
 
-            figureDict.Clear();
-            InitialiseDict();
+            //figureDict.Clear();
+            //InitialiseDict();
+            //figBuff = figureDict[figureTag];
+            figBuff.end = endpoint;
 
-            figBuff = figureDict[figureTag];
             figureList.Add(figBuff);
+
+            figBuff = (Figure)Activator.CreateInstance(figBuff.GetType(), pen,startpoint,endpoint);
             figureList.Draw(canvas);
         }
     }
