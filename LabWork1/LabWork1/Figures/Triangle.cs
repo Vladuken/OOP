@@ -8,26 +8,25 @@ using System.Drawing;
 
 namespace LabWork1.Figures
 {
-    class Triangle: Rectangle
+    class Triangle: Polygons
     {
 
-        public Point[] points = new Point[3];
+
+        public override Point end
+        {
+            set
+            {
+                base.end = value;
+                Point p1 = new Point(topLeftPoint.X, downRightPoint.Y);
+                Point p2 = new Point((topLeftPoint.X + downRightPoint.X) / 2, topLeftPoint.Y);
+                Point p3 = new Point(downRightPoint.X, downRightPoint.Y);
+                points = new Point[3] { p1, p2, p3 };
+            }
+        }
+
 
         public Triangle(Pen pen, Point begin, Point end) : base(pen, begin, end)
         {
-            //left down point
-            this.points[0].X = topLeftPoint.X;
-            this.points[0].Y = (downRightPoint.Y);
-            //this.points[0].Y = (topLeftPoint.Y - downRightPoint.Y);
-
-            //up middle point
-            this.points[1].X = (topLeftPoint.X + downRightPoint.X) / 2;
-            this.points[1].Y = topLeftPoint.Y;
-
-            //right down point
-            this.points[2].X = downRightPoint.X;
-            this.points[2].Y = downRightPoint.Y;
-
         }
 
         public override void Draw(Graphics graphics)

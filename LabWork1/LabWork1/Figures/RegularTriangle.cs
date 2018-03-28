@@ -10,21 +10,21 @@ namespace LabWork1.Figures
     class RegularTriangle : Triangle
     {
 
-        public RegularTriangle(Pen pen, Point begin, Point end) : base(pen, begin, end)
+
+        public override Point end
         {
-        
-            //left down point
-            this.points[0].X = topLeftPoint.X;
-            this.points[0].Y = (downRightPoint.Y);
+            set
+            {
+                base.end = value;
+                Point p1 = new Point(topLeftPoint.X, downRightPoint.Y);
+                Point p2 = new Point(topLeftPoint.X + (int)(height * 2 / Math.Sqrt(3) / 2), topLeftPoint.Y);
+                Point p3 = new Point(topLeftPoint.X + (int)(height * 2 / Math.Sqrt(3)), downRightPoint.Y);
+                points = new Point[3] { p1, p2, p3 };
+            }
+        }
 
-            //up middle point
-            this.points[1].X = topLeftPoint.X + (int)(height * 2 / Math.Sqrt(3) / 2);
-            this.points[1].Y = topLeftPoint.Y;
-
-            //right down point
-            this.points[2].X = topLeftPoint.X + (int)(height * 2 / Math.Sqrt(3));
-            this.points[2].Y = downRightPoint.Y;
-            
+        public RegularTriangle(Pen pen, Point begin, Point end) : base(pen, begin, end)
+        {             
         }
 
     }

@@ -7,40 +7,36 @@ using System.Threading.Tasks;
 
 namespace LabWork1.Figures
 {
-    class Rhombus: Rectangle
+    class Rhombus: Polygons
     {
-        Point[] points = new Point[4];
 
         
-
         public override Point end
         {
             set
             {
-                //left middle point
-                this.points[0].X = topLeftPoint.X;
-                this.points[0].Y = (topLeftPoint.Y + downRightPoint.Y) / 2;
-
-                //down middle point
-                this.points[1].X = (topLeftPoint.X + downRightPoint.X) / 2;
-                this.points[1].Y = downRightPoint.Y;
-
-                //right middle point
-                this.points[2].X = downRightPoint.X;
-                this.points[2].Y = (topLeftPoint.Y + downRightPoint.Y) / 2;
-
-                //up middle point
-                this.points[3].X = (topLeftPoint.X + downRightPoint.X) / 2;
-                this.points[3].Y = topLeftPoint.Y;
+                base.end = value;
+                Point p1 = new Point(topLeftPoint.X, (topLeftPoint.Y + downRightPoint.Y) / 2);
+                Point p2 = new Point((topLeftPoint.X + downRightPoint.X) / 2, downRightPoint.Y);
+                Point p3 = new Point(downRightPoint.X, (topLeftPoint.Y + downRightPoint.Y) / 2);
+                Point p4 = new Point((topLeftPoint.X + downRightPoint.X) / 2, topLeftPoint.Y);
+                points = new Point[4] {p1,p2,p3,p4};
             }
-           
-            
         }
-        
+
+        public override Point begin
+        {
+            set
+            {
+                base.begin = value;
+            }
+        }
+
+
+
         public Rhombus(Pen pen, Point begin , Point end):base(pen,begin,end)
         {
             
-
         }
 
         public override void Draw(Graphics graphics)

@@ -50,6 +50,7 @@
     <Compile Include="Figures\Figure.cs" />
     <Compile Include="Figures\FigureList.cs" />
     <Compile Include="Figures\Line.cs" />
+    <Compile Include="Figures\Polygons.cs" />
     <Compile Include="Figures\Rectangle.cs" />
     <Compile Include="Figures\RegularTriangle.cs" />
     <Compile Include="Figures\Rhombus.cs" />
