@@ -21,10 +21,6 @@ namespace LabWork1
         Figure figBuff;
         FigureList figureList = new FigureList();
 
-        //Dictionary<int, Figure> figureDict = new Dictionary<int, Figure>();
-
-        //int figureTag = 1;
-
         private bool isDrawn = false;
 
         public Form1()
@@ -32,7 +28,6 @@ namespace LabWork1
             InitializeComponent();
             canvas = canv.CreateGraphics();
             figBuff = new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint);
-            //InitialiseDict();
         }
 
        
@@ -65,20 +60,7 @@ namespace LabWork1
         }
 
 
-        /*private void InitialiseDict()
-        {
-            figureDict.Add(1, new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(2, new Square(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(3, new Ellipse(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(4, new Circle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(5, new Line(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(6, new Rhombus(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(7, new Triangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(8, new RightTriangle(new Pen(color, 3), startpoint, endpoint));
-            figureDict.Add(9, new RegularTriangle(new Pen(color, 3), startpoint, endpoint));
-        }*/
-
-
+        
         private void Rectangle_Click(object sender, EventArgs e)
         {
             figBuff = new Figures.Rectangle(new Pen(color, 3), startpoint, endpoint);
@@ -132,9 +114,7 @@ namespace LabWork1
             {
                 endpoint.X = e.X;
                 endpoint.Y = e.Y;
-                //figureDict.Clear();
-                //InitialiseDict();
-                //figBuff = figureDict[figureTag];
+              
                 figBuff.end = endpoint;
                 canv.Refresh();
             }
@@ -150,6 +130,7 @@ namespace LabWork1
             {
                 color = ChooseColor.Color;
                 choseColor.BackColor = ChooseColor.Color;
+                figBuff.pen.Color = color;
             }
         }
 
@@ -174,10 +155,6 @@ namespace LabWork1
             isDrawn = false;
             endpoint.X = e.X;
             endpoint.Y = e.Y;
-
-            //figureDict.Clear();
-            //InitialiseDict();
-            //figBuff = figureDict[figureTag];
             figBuff.end = endpoint;
 
             figureList.Add(figBuff);

@@ -18,7 +18,7 @@ namespace LabWork1.Figures
 
         public override void Draw(Graphics graphics)
         {
-            graphics.DrawEllipse(pen, topLeftPoint.X, topLeftPoint.Y,Math.Max(width,height), Math.Max(width, height));
+            graphics.DrawEllipse(pen, topLeftPoint.X, topLeftPoint.Y,hugeside,hugeside);
         }
     }
 }

@@ -42,6 +42,22 @@ namespace LabWork1.Figures
                 return new Point(Math.Max(begin.X, end.X), Math.Max(begin.Y, end.Y));
             }
         }
+        
+        public int hugeside
+        {
+            get
+            {
+                return Math.Max(width, height);
+            }
+        }
+
+        public int smallside
+        {
+            get
+            {
+                return Math.Min(width, height);
+            }
+        }
 
 
         public Rectangle(Pen pen,Point begin, Point end):base(pen,begin,end)

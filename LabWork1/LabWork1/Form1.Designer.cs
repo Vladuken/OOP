@@ -31,6 +31,7 @@
             this.canv = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Tools = new System.Windows.Forms.GroupBox();
+            this.Clear = new System.Windows.Forms.Button();
             this.RegularTriangle = new System.Windows.Forms.Button();
             this.RightTriangle = new System.Windows.Forms.Button();
             this.Triangle = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.Square = new System.Windows.Forms.Button();
             this.Rectangle = new System.Windows.Forms.Button();
             this.ChooseColor = new System.Windows.Forms.ColorDialog();
-            this.Clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.canv)).BeginInit();
             this.Tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.choseColor)).BeginInit();
@@ -83,7 +83,6 @@
             this.Tools.Controls.Add(this.Triangle);
             this.Tools.Controls.Add(this.YLable);
             this.Tools.Controls.Add(this.XLable);
-            this.Tools.Controls.Add(this.choseColor);
             this.Tools.Controls.Add(this.Back);
             this.Tools.Controls.Add(this.Line);
             this.Tools.Controls.Add(this.Rhombus);
@@ -97,6 +96,16 @@
             this.Tools.TabIndex = 2;
             this.Tools.TabStop = false;
             this.Tools.Text = "Tools";
+            // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(725, 29);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 112);
+            this.Clear.TabIndex = 12;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // RegularTriangle
             // 
@@ -151,7 +160,7 @@
             // choseColor
             // 
             this.choseColor.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.choseColor.Location = new System.Drawing.Point(645, 29);
+            this.choseColor.Location = new System.Drawing.Point(1327, 572);
             this.choseColor.Name = "choseColor";
             this.choseColor.Size = new System.Drawing.Size(56, 53);
             this.choseColor.TabIndex = 4;
@@ -228,25 +237,16 @@
             this.Rectangle.UseVisualStyleBackColor = true;
             this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
             // 
-            // Clear
-            // 
-            this.Clear.Location = new System.Drawing.Point(725, 29);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(75, 112);
-            this.Clear.TabIndex = 12;
-            this.Clear.Text = "Clear";
-            this.Clear.UseVisualStyleBackColor = true;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1257, 772);
+            this.ClientSize = new System.Drawing.Size(1250, 772);
             this.Controls.Add(this.Tools);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.canv);
+            this.Controls.Add(this.choseColor);
             this.Name = "Form1";
             this.Text = "VPaint";
             ((System.ComponentModel.ISupportInitialize)(this.canv)).EndInit();

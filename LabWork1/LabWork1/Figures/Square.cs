@@ -10,6 +10,7 @@ namespace LabWork1.Figures
 {
     class Square:Rectangle
     {
+        
         public Square(Pen pen,Point begin, Point end):base(pen,begin,end)
         {
 
@@ -17,7 +18,7 @@ namespace LabWork1.Figures
 
         public override void Draw(Graphics graphics)
         {
-            graphics.DrawRectangle(pen, topLeftPoint.X, topLeftPoint.Y, Math.Max(width,height), Math.Max(width, height));
+            graphics.DrawRectangle(pen, topLeftPoint.X, topLeftPoint.Y, hugeside, hugeside);
         }
 
     }

@@ -1,0 +1,17 @@
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.exe.config
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.exe
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.pdb
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csprojResolveAssemblyReference.cache
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\MainWindow.g.cs
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\App.g.cs
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks_MarkupCompile.cache
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks_MarkupCompile.lref
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\MainWindow.baml
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.g.resources
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.Properties.Resources.resources
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csproj.GenerateResource.cache
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csproj.CoreCompileInputs.cache
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.exe
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.pdb
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.g.cs
+c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.baml
