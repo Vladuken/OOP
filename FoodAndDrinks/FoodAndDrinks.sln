@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodAndDrinks", "FoodAndDrinks\FoodAndDrinks.csproj", "{662C4AAA-E4D4-4EBF-9569-7E3EFCBB9268}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{78503EF1-3AD6-4034-B71D-5ACE5C84A30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLToHTMLTransformer", "XMLToHTML\XMLToHTMLTransformer.csproj", "{2E3421E1-44F4-4DDF-A5FB-9EC00658E604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLToJSONTransformer", "XMLToJSONTransformer\XMLToJSONTransformer.csproj", "{5F76A14D-8373-4ED2-8E19-E4EA1BB9CD65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{662C4AAA-E4D4-4EBF-9569-7E3EFCBB9268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662C4AAA-E4D4-4EBF-9569-7E3EFCBB9268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662C4AAA-E4D4-4EBF-9569-7E3EFCBB9268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78503EF1-3AD6-4034-B71D-5ACE5C84A30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78503EF1-3AD6-4034-B71D-5ACE5C84A30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78503EF1-3AD6-4034-B71D-5ACE5C84A30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78503EF1-3AD6-4034-B71D-5ACE5C84A30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3421E1-44F4-4DDF-A5FB-9EC00658E604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3421E1-44F4-4DDF-A5FB-9EC00658E604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3421E1-44F4-4DDF-A5FB-9EC00658E604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3421E1-44F4-4DDF-A5FB-9EC00658E604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F76A14D-8373-4ED2-8E19-E4EA1BB9CD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F76A14D-8373-4ED2-8E19-E4EA1BB9CD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F76A14D-8373-4ED2-8E19-E4EA1BB9CD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F76A14D-8373-4ED2-8E19-E4EA1BB9CD65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

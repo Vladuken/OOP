@@ -38,6 +38,7 @@ namespace FoodAndDrinks
         AddDishDelegate AddDishHandler;
         private Dish _selectedDish;
 
+        private Interfaces.IPlugin currentplugin;
 
         public MainWindow()
         {
@@ -103,8 +104,11 @@ namespace FoodAndDrinks
         public void dgUpdate()
         {
             //Dishes
+            int dgSelect = dgDishes.SelectedIndex;
             dgDishes.ItemsSource = null;
             dgDishes.ItemsSource = Dishes;
+
+            dgDishes.SelectedIndex = dgSelect;
         }
 
         public void AddDishToList(Dish dish)
@@ -201,6 +205,15 @@ namespace FoodAndDrinks
                     {
                         serializer.Serialize(stream, Dishes);
                         //serializer.WriteObject(stream, Employees);
+                    }
+
+                    //XMLToJSONTransformer.XMLToJSONTransformer a = new XMLToJSONTransformer.XMLToJSONTransformer();
+                    //XMLToHTML.XMLToHTMLTransformer a = new XMLToHTML.XMLToHTMLTransformer();
+                    //a.Transform(dlgSaveFile.FileName);
+
+                    if (currentplugin != null)
+                    {
+                        currentplugin.Transform(dlgSaveFile.FileName);
                     }
                 }
                 catch (IOException)
@@ -348,6 +361,43 @@ namespace FoodAndDrinks
                 }
             }
             dgUpdate();
+        }
+
+        private void btnChooseDLL_Click(object sender, RoutedEventArgs e)
+        {
+            ////////////////////////////////////////////////////////////////////////////////
+            OpenFileDialog dlgOpenFile = new OpenFileDialog();
+            int cnt = 0;
+            dlgOpenFile.Filter = "Dll Files|*.dll";
+            if (dlgOpenFile.ShowDialog() == true)
+            {
+                Assembly.Load(File.ReadAllBytes(dlgOpenFile.FileName));
+
+                Assembly[] asm = AppDomain.CurrentDomain.GetAssemblies();
+
+                foreach (Assembly a in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    foreach (Type t in a.GetTypes())
+                    {
+                        if (t.GetInterface("IPlugin") != null)
+                        {
+                            currentplugin = Activator.CreateInstance(t) as Interfaces.IPlugin;
+                            lblPlugName.Content = currentplugin.PName();
+                        }
+
+                    }
+                }
+               
+            }
+            ////////////////////////////////////////////////////////////////////////////////////////
+            dgUpdate();
+
+        }
+
+        private void btnActivateDLL_Click(object sender, RoutedEventArgs e)
+        {
+            currentplugin = null;
+            lblPlugName.Content = "";
         }
     }
 }

@@ -112,6 +112,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{78503ef1-3ad6-4034-b71d-5ace5c84a30a}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToHTML\XMLToHTMLTransformer.csproj">
+      <Project>{2e3421e1-44f4-4ddf-a5fb-9ec00658e604}</Project>
+      <Name>XMLToHTMLTransformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XMLToJSONTransformer\XMLToJSONTransformer.csproj">
+      <Project>{5f76a14d-8373-4ed2-8e19-e4ea1bb9cd65}</Project>
+      <Name>XMLToJSONTransformer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plugins\XMLToHTML.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

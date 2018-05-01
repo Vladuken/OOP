@@ -1,0 +1,10 @@
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\bin\Debug\XMLToHTML.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\bin\Debug\XMLToHTML.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\bin\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\bin\Debug\Interfaces.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\obj\Debug\XMLToHTMLTransformer.csprojResolveAssemblyReference.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\obj\Debug\XMLToHTMLTransformer.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\obj\Debug\XMLToHTMLTransformer.csproj.CopyComplete
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\obj\Debug\XMLToHTML.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\obj\Debug\XMLToHTML.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToHTML\bin\Debug\XSLTRules.txt

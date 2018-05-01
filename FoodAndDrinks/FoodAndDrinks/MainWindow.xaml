@@ -5,23 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodAndDrinks"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="690.4">
+        Title="MainWindow" Height="450" Width="697.334">
     <Grid Height="420" Margin="0,0,-0.4,0" VerticalAlignment="Top">
-        <Button x:Name="AddDishBtn" Content="Add Dish" HorizontalAlignment="Left" Margin="496,24,0,0" VerticalAlignment="Top" Width="75" Click="AddDishBtn_Click"/>
+        <Button x:Name="AddDishBtn" Content="Add Dish" HorizontalAlignment="Left" Margin="496,48,0,0" VerticalAlignment="Top" Width="75" Click="AddDishBtn_Click"/>
         <DataGrid x:Name="dgDishes" HorizontalAlignment="Left" Height="388" Margin="10,22,0,0" VerticalAlignment="Top" Width="481" SelectionChanged="dgDishes_SelectionChanged"/>
-        <Button x:Name="EditDishBtn" Content="Edit Dish" HorizontalAlignment="Left" Margin="496,48,0,0" VerticalAlignment="Top" Width="75" Click="EditDishBtn_Click"/>
+        <Button x:Name="EditDishBtn" Content="Edit Dish" HorizontalAlignment="Left" Margin="496,48,0,0" VerticalAlignment="Top" Width="75" Click="EditDishBtn_Click" Visibility="Hidden"/>
         <Button x:Name="DeleteDishBtn" Content=" Delete Dish" HorizontalAlignment="Left" Margin="496,72,0,0" VerticalAlignment="Top" Width="75" Click="DeleteDishBtn_Click"/>
-        <Button x:Name="binSerializeBtn" Content="Serialize" HorizontalAlignment="Left" Margin="496,132,0,0" VerticalAlignment="Top" Width="75" Click="binSerializeBtn_Click"/>
-        <Button x:Name="binSerializeBtn1" Content="Deserialize" HorizontalAlignment="Left" Margin="496,156,0,0" VerticalAlignment="Top" Width="75" Click="binSerializeBtn1_Click"/>
-        <Button x:Name="xmlSerializeBtn" Content="Serialize" HorizontalAlignment="Left" Margin="496,201,0,0" VerticalAlignment="Top" Width="75" Click="xmlSerializeBtn_Click"/>
-        <Button x:Name="xmlDeserializeBtn" Content="Deserialize" HorizontalAlignment="Left" Margin="496,225,0,0" VerticalAlignment="Top" Width="75" Click="xmlDeserializeBtn_Click"/>
-        <Button x:Name="btnJSONSerialize" Content="Serialize" HorizontalAlignment="Left" Margin="496,276,0,0" VerticalAlignment="Top" Width="75" Click="btnJSONSerialize_Click"/>
-        <Button x:Name="btnJSONdeserialize" Content="Deserialize" HorizontalAlignment="Left" Margin="496,300,0,0" VerticalAlignment="Top" Width="75" Click="btnJSONdeserialize_Click"/>
-        <Label Content="Binary" HorizontalAlignment="Left" Margin="496,102,0,0" VerticalAlignment="Top"/>
-        <Label Content="XML" HorizontalAlignment="Left" Margin="496,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="JSON" HorizontalAlignment="Left" Margin="496,249,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAddAdditive" Content="Add additive" HorizontalAlignment="Left" Margin="512,363,0,0" VerticalAlignment="Top" Width="120" Click="btnAddAdditive_Click"/>
-        <ComboBox x:Name="cbAdditive" HorizontalAlignment="Left" Margin="512,336,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnremoveAdditive" Content="Remove additive" HorizontalAlignment="Left" Margin="512,387,0,0" VerticalAlignment="Top" Width="120" Click="btnremoveAdditive_Click"/>
+        <Button x:Name="binSerializeBtn" Content="Serialize" HorizontalAlignment="Left" Margin="610,48,0,0" VerticalAlignment="Top" Width="75" Click="binSerializeBtn_Click"/>
+        <Button x:Name="binSerializeBtn1" Content="Deserialize" HorizontalAlignment="Left" Margin="610,72,0,0" VerticalAlignment="Top" Width="75" Click="binSerializeBtn1_Click"/>
+        <Button x:Name="xmlSerializeBtn" Content="Serialize" HorizontalAlignment="Left" Margin="496,134,0,0" VerticalAlignment="Top" Width="75" Click="xmlSerializeBtn_Click"/>
+        <Button x:Name="xmlDeserializeBtn" Content="Deserialize" HorizontalAlignment="Left" Margin="496,158,0,0" VerticalAlignment="Top" Width="75" Click="xmlDeserializeBtn_Click"/>
+        <Button x:Name="btnJSONSerialize" Content="Serialize" HorizontalAlignment="Left" Margin="606,135,0,0" VerticalAlignment="Top" Width="75" Click="btnJSONSerialize_Click"/>
+        <Button x:Name="btnJSONdeserialize" Content="Deserialize" HorizontalAlignment="Left" Margin="606,158,0,0" VerticalAlignment="Top" Width="75" Click="btnJSONdeserialize_Click"/>
+        <Label Content="Binary" HorizontalAlignment="Left" Margin="610,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.497,0.536"/>
+        <Label Content="XML" HorizontalAlignment="Left" Margin="496,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="JSON" HorizontalAlignment="Left" Margin="610,108,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddAdditive" Content="Add additive" HorizontalAlignment="Left" Margin="496,363,0,0" VerticalAlignment="Top" Width="189" Click="btnAddAdditive_Click"/>
+        <ComboBox x:Name="cbAdditive" HorizontalAlignment="Left" Margin="496,336,0,0" VerticalAlignment="Top" Width="189"/>
+        <Button x:Name="btnremoveAdditive" Content="Remove additive" HorizontalAlignment="Left" Margin="496,387,0,0" VerticalAlignment="Top" Width="189" Click="btnremoveAdditive_Click"/>
+        <Button x:Name="btnChooseDLL" Content="Choose DLL" HorizontalAlignment="Left" Margin="496,233,0,0" VerticalAlignment="Top" Width="189" Click="btnChooseDLL_Click"/>
+        <Label x:Name="lblPlugName" Content="" HorizontalAlignment="Left" Margin="496,200,0,0" VerticalAlignment="Top" Width="189" Height="26"/>
+        <Button x:Name="btnActivateDLL" Content="Deactivate DLL" HorizontalAlignment="Left" Margin="496,257,0,0" VerticalAlignment="Top" Width="189" Click="btnActivateDLL_Click"/>
     </Grid>
 </Window>

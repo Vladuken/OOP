@@ -1,0 +1,11 @@
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\XMLToJSONTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\XMLToJSONTransformer.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\Newtonsoft.Json.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\Interfaces.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\bin\Debug\Newtonsoft.Json.xml
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\obj\Debug\XMLToJSONTransformer.csprojResolveAssemblyReference.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\obj\Debug\XMLToJSONTransformer.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\obj\Debug\XMLToJSONTransformer.csproj.CopyComplete
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\obj\Debug\XMLToJSONTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToJSONTransformer\obj\Debug\XMLToJSONTransformer.pdb

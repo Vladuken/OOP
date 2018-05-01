@@ -1,0 +1,5 @@
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\Interfaces\bin\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\Interfaces\bin\Debug\Interfaces.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\Interfaces\obj\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\Interfaces\obj\Debug\Interfaces.pdb

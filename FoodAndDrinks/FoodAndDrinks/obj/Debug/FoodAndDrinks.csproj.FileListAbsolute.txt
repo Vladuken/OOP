@@ -15,3 +15,31 @@ c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrin
 c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.pdb
 c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.g.cs
 c:\users\влад\source\repos\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.baml
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.exe.config
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.exe
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\FoodAndDrinks.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csprojResolveAssemblyReference.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.g.cs
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\MainWindow.g.cs
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\App.g.cs
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks_MarkupCompile.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks_MarkupCompile.lref
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\AddDish.baml
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\MainWindow.baml
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.g.resources
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.Properties.Resources.resources
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csproj.GenerateResource.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.exe
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToHTML.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToHTML.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Interfaces.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks.csproj.CopyComplete
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\obj\Debug\FoodAndDrinks_Content.g.cs
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XSLTRules.txt
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToJSONTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Newtonsoft.Json.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToJSONTransformer.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Newtonsoft.Json.xml
