@@ -1,0 +1,17 @@
+﻿
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+      <xsl:for-each select="ArrayOfDish/Dish">
+        <xsl:text>&#xA;</xsl:text>
+        <xsl:value-of select="Title" />
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="Calories" />
+            <xsl:for-each select="AdsList/AdsList/AdditiveClass">
+                <xsl:text>&#xA;  </xsl:text>
+				<xsl:value-of select="Name"/>
+            </xsl:for-each>
+      <xsl:text>&#xA;</xsl:text>
+      </xsl:for-each>
+</xsl:template>
+</xsl:stylesheet>

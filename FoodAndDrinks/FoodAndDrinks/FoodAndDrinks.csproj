@@ -125,6 +125,10 @@
       <Project>{5f76a14d-8373-4ed2-8e19-e4ea1bb9cd65}</Project>
       <Name>XMLToJSONTransformer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\XMLToTXTTransformer\XMLToTXTTransformer.csproj">
+      <Project>{f61229f7-7e54-4042-9351-cdaf01072743}</Project>
+      <Name>XMLToTXTTransformer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Plugins\XMLToHTML.dll" />

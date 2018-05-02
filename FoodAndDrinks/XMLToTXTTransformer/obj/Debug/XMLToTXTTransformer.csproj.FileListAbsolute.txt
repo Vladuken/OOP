@@ -1,0 +1,10 @@
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\bin\Debug\TXTRules.txt
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\bin\Debug\XMLToTXTTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\bin\Debug\XMLToTXTTransformer.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\bin\Debug\Interfaces.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\bin\Debug\Interfaces.pdb
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\obj\Debug\XMLToTXTTransformer.csprojResolveAssemblyReference.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\obj\Debug\XMLToTXTTransformer.csproj.CoreCompileInputs.cache
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\obj\Debug\XMLToTXTTransformer.csproj.CopyComplete
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\obj\Debug\XMLToTXTTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\XMLToTXTTransformer\obj\Debug\XMLToTXTTransformer.pdb

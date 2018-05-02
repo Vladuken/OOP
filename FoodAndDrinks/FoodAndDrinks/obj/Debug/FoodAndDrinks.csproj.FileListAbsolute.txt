@@ -43,3 +43,6 @@ F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debu
 F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Newtonsoft.Json.dll
 F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToJSONTransformer.pdb
 F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\Newtonsoft.Json.xml
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\TXTRules.txt
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToTXTTransformer.dll
+F:\УЧЕБА\4 СЕМЕСТР\ООТП\OOP\FoodAndDrinks\FoodAndDrinks\bin\Debug\XMLToTXTTransformer.pdb
