@@ -77,8 +77,11 @@
     <Compile Include="Classes\AdditiveList.cs" />
     <Compile Include="Classes\Dessert.cs" />
     <Compile Include="Classes\Dish.cs" />
-    <Compile Include="Classes\Drink.cs" />
+    <Compile Include="Classes\Fluid.cs" />
     <Compile Include="Classes\FinalDish.cs" />
+    <Compile Include="Classes\FluidToFoodAdapter.cs" />
+    <Compile Include="Classes\IDrink.cs" />
+    <Compile Include="Classes\IFood.cs" />
     <Compile Include="Classes\MainDish.cs" />
     <Compile Include="Classes\StarterDish.cs" />
     <Compile Include="MainWindow.xaml.cs">

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FoodAndDrinks.Classes
 {
     [Serializable]
     [DataContract]
-    public abstract class Dish
+    public abstract class Dish : IFood
     {
         
         [DataMember]
@@ -45,6 +46,11 @@ namespace FoodAndDrinks.Classes
         public void AddAdditive(AdditiveList addlist)
         {
             AdsList = addlist;
+        }
+
+        public virtual void Eat()
+        {
+            MessageBox.Show("СЪЕДЕНО", "Food");
         }
 
     }

@@ -209,7 +209,7 @@ namespace FoodAndDrinks
                     //XMLToTXTTransformer.XMLToTXTTransformer a = new XMLToTXTTransformer.XMLToTXTTransformer();
                     //XMLToJSONTransformer.XMLToJSONTransformer a = new XMLToJSONTransformer.XMLToJSONTransformer();
                     //XMLToHTML.XMLToHTMLTransformer a = new XMLToHTML.XMLToHTMLTransformer();
-                    //a.Transform(dlgSaveFile.FileName);
+                    // a.Transform(dlgSaveFile.FileName);
 
                     if (currentplugin != null)
                     {
@@ -398,6 +398,24 @@ namespace FoodAndDrinks
         {
             currentplugin = null;
             lblPlugName.Content = "";
+        }
+
+        private void eatbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (_selectedDish != null)
+            {
+                if (_selectedDish is Fluid)
+                {
+                    IFood fluidfood = new FluidToFoodAdapter(_selectedDish as Fluid);
+                    fluidfood.Eat();
+                }
+                else
+                {
+                    _selectedDish.Eat();
+                }
+               
+                
+            }
         }
     }
 }

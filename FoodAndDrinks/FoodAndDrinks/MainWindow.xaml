@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodAndDrinks"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="697.334">
+        Title="MainWindow" Height="450" Width="974.534">
     <Grid Height="420" Margin="0,0,-0.4,0" VerticalAlignment="Top">
         <Button x:Name="AddDishBtn" Content="Add Dish" HorizontalAlignment="Left" Margin="496,48,0,0" VerticalAlignment="Top" Width="75" Click="AddDishBtn_Click"/>
         <DataGrid x:Name="dgDishes" HorizontalAlignment="Left" Height="388" Margin="10,22,0,0" VerticalAlignment="Top" Width="481" SelectionChanged="dgDishes_SelectionChanged"/>
@@ -26,5 +26,6 @@
         <Button x:Name="btnChooseDLL" Content="Choose DLL" HorizontalAlignment="Left" Margin="496,233,0,0" VerticalAlignment="Top" Width="189" Click="btnChooseDLL_Click"/>
         <Label x:Name="lblPlugName" Content="" HorizontalAlignment="Left" Margin="496,200,0,0" VerticalAlignment="Top" Width="189" Height="26"/>
         <Button x:Name="btnActivateDLL" Content="Deactivate DLL" HorizontalAlignment="Left" Margin="496,257,0,0" VerticalAlignment="Top" Width="189" Click="btnActivateDLL_Click"/>
+        <Button x:Name="eatbtn" Content="Eat" HorizontalAlignment="Left" Margin="702,387,0,0" VerticalAlignment="Top" Width="118" Click="eatbtn_Click"/>
     </Grid>
 </Window>
