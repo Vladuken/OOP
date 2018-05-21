@@ -400,6 +400,8 @@ namespace FoodAndDrinks
             lblPlugName.Content = "";
         }
 
+
+        //adapter 
         private void eatbtn_Click(object sender, RoutedEventArgs e)
         {
             if (_selectedDish != null)
@@ -414,6 +416,16 @@ namespace FoodAndDrinks
                     _selectedDish.Eat();
                 }
                
+                
+            }
+        }
+
+        private void proxyeatbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (_selectedDish != null)
+            { 
+                DishProxy proxy = new DishProxy(_selectedDish);
+                proxy.Eat();
                 
             }
         }
