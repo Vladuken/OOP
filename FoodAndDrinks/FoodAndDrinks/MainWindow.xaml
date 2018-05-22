@@ -28,5 +28,7 @@
         <Button x:Name="btnActivateDLL" Content="Deactivate DLL" HorizontalAlignment="Left" Margin="496,257,0,0" VerticalAlignment="Top" Width="189" Click="btnActivateDLL_Click"/>
         <Button x:Name="eatbtn" Content="Eat" HorizontalAlignment="Left" Margin="702,387,0,0" VerticalAlignment="Top" Width="118" Click="eatbtn_Click"/>
         <Button x:Name="proxyeatbtn" Content="Proxy Eat" HorizontalAlignment="Left" Margin="844,387,0,0" VerticalAlignment="Top" Width="75" Click="proxyeatbtn_Click"/>
+        <Label x:Name="singletonlbl" Content="Label" HorizontalAlignment="Left" Margin="763,49,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="singletonbtn" Content="Get Singleton Instance" HorizontalAlignment="Left" Margin="763,87,0,0" VerticalAlignment="Top" Width="170" Click="singletonbtn_Click"/>
     </Grid>
 </Window>

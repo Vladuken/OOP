@@ -84,6 +84,7 @@
     <Compile Include="Classes\IDrink.cs" />
     <Compile Include="Classes\IFood.cs" />
     <Compile Include="Classes\MainDish.cs" />
+    <Compile Include="Classes\SingletonDish.cs" />
     <Compile Include="Classes\StarterDish.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

@@ -427,7 +427,18 @@ namespace FoodAndDrinks
                 DishProxy proxy = new DishProxy(_selectedDish);
                 proxy.Eat();
                 
+
             }
+        }
+
+        private void singletonbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (_selectedDish != null)
+            {
+                SingletonDish d = SingletonDish.GetInstance(_selectedDish);
+                singletonlbl.Content = d.Title + "  " + d.Calories.ToString();
+            }
+            
         }
     }
 }
